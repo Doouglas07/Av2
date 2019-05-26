@@ -1,6 +1,6 @@
 package com.company;
 
-public class Higiene {
+public class Higiene implements Apresentar{
     private String tipo;
     private String nome;
     private float pesoliquido;
@@ -71,16 +71,16 @@ public class Higiene {
     }
 
 
-    public float mostrarML(float pesoliquido)
+    public float apresentarML(float pesoliquido)
     {
         return getPesoliquido();
     }
-    public double mostrarcod(double coddebarras)
+    public double apresentarcod(double coddebarras)
     {
         return getCoddebarras();
     }
 
-    public double mostrarpreço (double preço)
+    public double apresentarpreço (double preço)
     {
         return getPreço();
     }
