@@ -1,0 +1,29 @@
+package com.company;
+
+public interface Controleremoto {
+    void mudarCanal(int canal);
+
+    void aumentarVolume (int taxa);
+
+    void diminuirVolume (int taxa);
+
+    boolean ligar( boolean status);
+
+    boolean desligar(boolean status);
+
+    public void ligação();
+
+    public void mudarestação();
+
+    public int mostrarcodigo(int getcod);
+
+    public String mostrarcor(String cor);
+
+    public void mostrarlargura(double largura);
+
+    public void mostraraltura(double altura);
+
+    public void mostrarpreço(double preço);
+
+    public void comprarproduto();
+}
