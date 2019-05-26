@@ -1,0 +1,14 @@
+package com.company;
+
+public interface Mostrar {
+
+    public String mostrarpeso (String peso);
+
+    public String mostrartipo (String tipo);
+
+    public double mostrarcodigo(double codigodebarras);
+
+    public double mostrarpreço (double preço);
+
+    public void comprarproduto();
+
