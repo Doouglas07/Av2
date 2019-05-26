@@ -1,6 +1,10 @@
 package com.company;
 
-public class Eletronicos {
+import java.util.Scanner;
+
+public class Eletronicos implements Controleremoto {
+
+    public boolean status=false;
     private String tipo;
     private String cor;
     private String fabricante;
@@ -28,132 +32,113 @@ public class Eletronicos {
 
 
 
-    public String getTipo()
-    {
-        return tipo;
-    }
+    public String getTipo(){return tipo; }
 
-    public void setTipo(String tipo)
-    {
-        this.tipo = tipo;
-    }
+    public void setTipo(String tipo){this.tipo = tipo;}
 
-    public String getCor()
-    {
-        return cor;
-    }
+    public String getCor(){return cor;}
 
-    public void setCor(String cor)
-    {
-        this.cor = cor;
-    }
+    public void setCor(String cor){this.cor = cor;}
 
-    public String getFabricante()
-    {
-        return fabricante;
-    }
+    public String getFabricante(){return fabricante;}
 
-    public void setFabricante(String fabricante)
-    {
-        this.fabricante = fabricante;
-    }
+    public void setFabricante(String fabricante){this.fabricante = fabricante;}
 
-    public double getAltura()
-    {
-        return altura;
-    }
+    public double getAltura(){return altura;}
 
-    public void setAltura(double altura)
-    {
-        this.altura = altura;
-    }
+    public void setAltura(double altura){this.altura = altura;}
 
-    public double getLargura()
-    {
-        return largura;
-    }
+    public double getLargura(){return largura;}
 
-    public void setLargura(double largura)
-    {
-        this.largura = largura;
-    }
+    public void setLargura(double largura) {this.largura = largura;}
 
-    public double getCod()
-    {
-        return cod;
-    }
+    public double getCod() {return cod;}
 
-    public void setCod(double cod)
-    {
-        this.cod = cod;
-    }
+    public void setCod(double cod) { this.cod = cod;}
 
-    public double getPreço()
-    {
-        return preço;
-    }
+    public double getPreço() { return preço;}
 
-    public void setPreço(double preço)
-    {
-        this.preço = preço;
-    }
+    public void setPreço(double preço) {this.preço = preço;}
 
-    public int getVolume()
-    {
-        return volume;
-    }
+    public int getVolume() { return volume;}
 
-    public void setVolume(int volume)
-    {
-        this.volume = volume;
-    }
+    public void setVolume(int volume) {this.volume = volume;}
 
-        public void ligar()
+
+    // funcionalidades
+
+        public boolean ligar(boolean status)
         {
-            System.out.println("ligado");
+            System.out.println("Ligado");
+            return status==true;
         }
-        public void desligar()
+
+        public boolean desligar(boolean status)
         {
         System.out.println("desligado");
+        return status;
         }
-        public int aumentarsom(int getvolume)
+
+        public void aumentarVolume(int volume)
         {
-            return getvolume;
+            volume++;
         }
+
+        public void diminuirVolume (int volume)
+        {
+            volume--;
+        }
+
+        public void mudarCanal  (int canal)
+        {
+            int numerodocanal;
+            Scanner c = new Scanner(System.in);
+            System.out.println("digite o nº do canal?");
+            numerodocanal= c.nextInt();
+            System.out.println(numerodocanal);
+
+        }
+
+
         public void ligação()
         {
-
-
-        }
-        public void mudarcanal()
-        {
+            int num;
+            Scanner l = new Scanner(System.in);
+            System.out.println("digite o nº que deseja ligar?");
+            num=l.nextInt();
+            System.out.println("ligando para"+num);
 
         }
         public void mudarestação()
         {
 
         }
+
         public int mostrarcodigo(int getcod)
         {
-        return getcod;
+            return getcod;
         }
 
         public String mostrarcor(String cor)
         {
-        return getCor();
+            return getCor();
         }
-        public double mostrarlargura(double largura)
+
+        public void mostrarlargura(double largura)
         {
-        return getLargura();
+            System.out.println("Largura:"+getLargura());
         }
-        public double mostraraltura(double altura)
+
+        public void mostraraltura(double altura)
         {
-        return getAltura();
+            System.out.println("Altura:"+getAltura());
         }
-        public double mostrarpreço(double preço)
+
+        public void mostrarpreço(double preço)
         {
-        return getPreço();
+        System.out.println("o produto custa"+getPreço());
         }
+
         public void comprarproduto()
         {
         System.out.println("O produto está no carrinho");
@@ -161,3 +146,5 @@ public class Eletronicos {
 
 
 }
+
+
