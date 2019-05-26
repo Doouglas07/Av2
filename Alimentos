@@ -1,6 +1,6 @@
 package com.company;
 
-public class Alimentos {
+public class Alimentos implements Mostrar {
     private String tipo;
     private String fabricante;
     private String peso;
@@ -62,9 +62,9 @@ public class Alimentos {
             return getPreço();
         }
 
-    public void comprarproduto()
-    {
+        public void comprarproduto()
+        {
         System.out.println("O produto está no carrinho");
-    }
+        }
 
 }
