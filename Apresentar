@@ -1,0 +1,9 @@
+package com.company;
+
+public interface Apresentar {
+
+    public float apresentarML(float pesoliquido);
+    public double apresentarcod(double coddebarras);
+    public double apresentarpreço (double preço);
+    public void comprarproduto();
+}
