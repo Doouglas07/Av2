@@ -1,0 +1,17 @@
+package com.company;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+abstract class CarrinhodeCompras {
+    ArrayList<CarrinhodeCompras> Listcarrinho = new ArrayList<CarrinhodeCompras>(10);
+    void comproueletronico(){
+        Scanner leia = new Scanner(System.in);
+        System.out.println("digite o cod do produto:");
+        leia.nextInt();
+        Listcarrinho.add();
+
+
+
+
+    }
+}
