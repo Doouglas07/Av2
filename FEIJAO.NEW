@@ -1,0 +1,26 @@
+package av2;
+
+public class Feijao extends Alimentos {
+
+
+	public static void main(String[] args) {
+
+		
+		Alimentos feijao= new Alimentos();
+		feijao.setTipo(" Feijao macassar");
+		feijao.setPeso("1kg");
+		feijao.setFabricante("Turquesa");
+		feijao.setCodigodebarras(001);
+		feijao.setPreco(7.00);
+		ListAlimentos.add(feijao);
+
+		Alimentos feijaoPreto = new Alimentos();
+		feijaoPreto.setTipo("Feijao Preto");
+		feijaoPreto.setPeso("1Kg");
+		feijaoPreto.setFabricante("KI CALDO");
+		feijaoPreto.setCodigodebarras(001);
+		feijaoPreto.setPreco(7.20);
+		ListAlimentos.add(feijaoPreto);
+
+	}
+}
