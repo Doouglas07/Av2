@@ -1,0 +1,28 @@
+package av2;
+
+
+public class Arroz extends Alimentos {
+
+
+	public static void main(String[] args) {
+
+		Alimentos Arroz = new Alimentos();
+		Arroz.setTipo("Arroz branco");
+		Arroz.setPeso("1.5kg");
+		Arroz.setCodigodebarras(002);
+		Arroz.setFabricante("AMIL");
+		Arroz.setPreco(5.00);
+		ListAlimentos.add(Arroz);
+
+
+		Alimentos ArrozArbóreo = new Alimentos();
+		ArrozArbóreo.setTipo("Arroz Arboreo");
+		ArrozArbóreo.setPeso("1.5kg");
+		ArrozArbóreo.setFabricante("RR Arroz");
+		ArrozArbóreo.setCodigodebarras(002);
+		ArrozArbóreo.setPreco(5.30);
+		ListAlimentos.add(ArrozArbóreo);
+
+
+	}
+}
