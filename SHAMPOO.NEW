@@ -1,0 +1,26 @@
+package av2;
+
+public class Shampoo extends Higiene   {
+
+	public static void main(String[] args) {
+
+
+		Higiene Seda = new Higiene();
+		Seda.setTipo("Shampoo");
+		Seda.setFabricante("Seda");
+		Seda.setCoddebarras(0003);
+		Seda.setPesoliquido(500);
+		Seda.setPreco(4.60);
+		ListHigiene.add(Seda);
+
+		Higiene Tresseme= new Higiene();
+		Tresseme.setTipo("Shampoo");
+		Tresseme.setFabricante("Tresemé");
+		Tresseme.setCoddebarras(0003);
+		Tresseme.setPesoliquido(800);
+		Tresseme.setPreco(8.60);
+
+		ListHigiene.add(Tresseme);
+
+	}
+}
