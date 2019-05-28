@@ -1,0 +1,102 @@
+package av2;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Carrinho extends Produtos {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int menu = 0;
+
+		ArrayList<Carrinho> ListCarrinho = new ArrayList<Carrinho>();
+
+
+		//						MENU
+
+		System.out.print("\n  Bem Vindo ao APSMart \n\n  1 - Ir para o Menu de produtos\n  2 - Acessar meu carrinho\n");
+
+		System.out.print("\n  Escolha uma opcão: ");
+
+		menu = sc.nextInt();
+
+		sc.nextLine();
+
+
+		switch (menu) {
+		case 1: // MENU ELETRONICOS
+
+
+			System.out.println("1 - Eletrônicos");
+			System.out.println("2 - Alimentos");
+			System.out.println("3 - Higiene");
+			System.out.println("4 - Voltar");
+
+
+			menu = sc.nextInt();
+
+			sc.nextLine();
+
+			if (menu ==1) {
+
+
+				for (int i = 0; i < listEletronicos.size(); i++) {
+					System.out.println(listEletronicos.get(i));
+				}
+
+				System.out.println("Digite o codigo do produto que deseja comprar:");
+
+				menu = sc.nextInt();
+
+				sc.nextLine();
+
+				// ListCarrinho.add();
+
+
+
+			}
+
+			if (menu ==2) {
+
+				// for (int i = 0; i < listAlimentos.size(); i++) {
+				//			System.out.println(listEletronicos.get(i));
+			}
+
+			System.out.println("Digite o codigo do produto que deseja comprar:");
+
+			menu = sc.nextInt();
+
+			sc.nextLine();
+
+			//     ListCarrinho.add;
+
+
+
+		}
+
+		if (menu ==3) {
+
+
+			//	for (int i = 0; i < listHigiene.size(); i++) {
+			//	System.out.println(listHigiene.get(i));
+		}
+
+		System.out.println("Digite o codigo do produto que deseja comprar:");
+
+		menu = sc.nextInt();
+
+		sc.nextLine();
+
+
+
+		if (menu ==4) {
+
+
+
+		}
+
+
+	}
+}
+
